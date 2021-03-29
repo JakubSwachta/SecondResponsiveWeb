@@ -1,0 +1,207 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+/*===== VARIABLES CSS =====*/
+:root {
+  --header-height: 3rem;
+}
+/*===== Colors =====*/
+/*===== Font and typography =====*/
+/*===== Font weight =====*/
+/*===== Margenes =====*/
+/*===== z index =====*/
+/*===== BASE =====*/
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+}
+body {
+  margin: var(--header-height) 0 0 0;
+  font-size: 0.938rem;
+  font-weight: 500;
+  background-color: #fbf9f9;
+  color: #524748;
+  line-height: 1.6;
+  font-family: "Poppins", sans-serif;
+}
+h1,
+h2,
+h3,
+ul,
+p {
+  margin: 0;
+}
+h2,
+h3 {
+  font-weight: 600;
+}
+ul {
+  padding: 0;
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+/*===== CLASS CSS =====*/
+.section {
+  padding: 4rem 0 2rem;
+}
+.section-title,
+.section-subtitle {
+  text-align: center;
+}
+.section-title {
+  font-size: 1.5rem;
+  color: #3e0e12;
+  margin-bottom: 1.5rem;
+}
+.section-subtitle {
+  display: block;
+  font-size: 0.75rem;
+  font-weight: 600;
+}
+/*===== LAYOUT =====*/
+.bd-container {
+  max-width: 1024px;
+  width: calc(100% - 2rem);
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.bd-grid {
+  display: grid;
+  gap: 1.5rem;
+}
+.l-header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0%;
+  z-index: 100;
+  background: #000;
+}
+/*===== NAV =====*/
+.nav {
+  height: var(--header-height);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+/* ||||| media queries ||||| */
+@media screen and (max-width: 768px) {
+  .nav__menu {
+    position: fixed;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    padding-top: 1.5rem;
+    text-align: center;
+    background: #000;
+    transition: 0.4s;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    border-radius: 0 0 1rem 1rem;
+  }
+}
+.nav__item {
+  margin-bottom: 1.5rem;
+}
+.nav__link {
+  color: #fbf9f9;
+  transition: 0.3s;
+}
+.nav__link:hover {
+  color: #7b6f71;
+}
+.nav__logo,
+.nav__toggle {
+  color: #fbf9f9;
+}
+.nav__toggle {
+  font-size: 1.3rem;
+  cursor: pointer;
+}
+/* Show menu */
+.show-menu {
+  top: var(--header-height);
+}
+/* Active menu */
+.active-link {
+  position: relative;
+}
+.active-link::after {
+  content: "";
+  position: absolute;
+  bottom: -0.7rem;
+  left: 0;
+  width: 65%;
+  height: 3px;
+  background-color: #7b6f71;
+}
+/* Change background header */
+.scroll-header {
+  background-color: #fbf9f9;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.scroll-header .nav__logo,
+.scroll-header .nav__toggle,
+.scroll-header .nav__link {
+  color: #2f0a0d;
+}
+.scroll-header .nav__menu {
+  background-color: #fbf9f9;
+}
+/*===== SCROLL TOP =====*/
+.scrolltop {
+  position: fixed;
+  right: 1rem;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0.5rem;
+  background: rgba(123, 111, 113, 0.7);
+  border-radius: 0.5rem;
+  z-index: 10;
+  transition: 0.4s;
+  visibility: hidden;
+}
+.scrolltop:hover {
+  background-color: #3e0e12;
+}
+.scrolltop__icon {
+  font-size: 2rem;
+  color: #fbf9f9;
+}
+/* Show scroll top */
+.show-scroll {
+  visibility: visible;
+  bottom: 1.5rem;
+}
+/*===== HOME =====*/
+.home {
+  background-color: #000;
+  overflow: hidden;
+}
+.home__container {
+  position: relative;
+  height: calc(100vh - var(--header-height));
+}
+/*BUTTONS*/
+/*===== ABOUT =====*/
+/*===== QUALIFICATION =====*/
+/*===== SERVICES =====*/
+/*===== PROJECT IN MIND =====*/
+/*===== PORTFOLIO =====*/
+/* Active menu portfolio*/
+/*===== TESTIMONIAL =====*/
+/*===== CONTACTME =====*/
+/*===== FOOTER =====*/
+/*===== MEDIA QUERIES =====*/
+/*# sourceMappingURL=index.c66ad931.css.map */
